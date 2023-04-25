@@ -11,8 +11,6 @@ class Handler implements URLHandler {
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
             return String.format("Search Engine");
-        } else if (url.getPath().equals("/increment")) {
-            return String.format("Number incremented!");
         } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
